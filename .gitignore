@@ -16,7 +16,11 @@ build/
 graphify-out/
 .graphify_*.json
 .graphify_python
-.claude/
+.claude/*
+# Repo-shared SessionStart hook for Claude Code on the web (sets up rtk).
+# Personal/local Claude settings elsewhere under .claude/ stay ignored.
+!.claude/settings.json
+!.claude/hooks/
 skills/
 # The packaged skill bundles under graphify/skills/ are generated, committed
 # artifacts (rendered by tools/skillgen). Keep them tracked even though the
